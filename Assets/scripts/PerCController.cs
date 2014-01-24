@@ -11,7 +11,7 @@ public class PerCController : MonoBehaviour
 	void Start()
 	{
 		this.pp = new PXCUPipeline();
-		if (this.pp == null || !this.pp.Init(this.ppMode))
+		if (this.pp == null || !this.pp.Init(PXCUPipeline.Mode.GESTURE))
 			Debug.Log("PXCUPipeline Initialization ERROR");
 	}
 
